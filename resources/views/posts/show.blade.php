@@ -5,9 +5,9 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2>titulo</h2>
-          <p>descripcion</p>
-          <p>Posteado hace 5 dias</p>
+          <h2>{{$post ->tittle}}</h2>
+          <p>{{$post ->description}}</p>
+          <p>Posteado {{ $post ->created_at->diffforhumans() }}</p>
 
         </div>
       </div>
